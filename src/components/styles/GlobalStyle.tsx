@@ -26,11 +26,12 @@ const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
   }
 
   body {
-    font-family: 'IBM Plex Mono', monospace;
-    font-weight: 500;
-    background-color: ${({ theme }) => theme.colors?.body};
-    color: ${({ theme }) => theme.colors?.text[100]};
-  }
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 500;
+  background-color: ${({ theme }) =>
+    theme.name === "blue-matrix" ? "#020814" : theme.colors?.body};
+  color: ${({ theme }) => theme.colors?.text[100]};
+}
 
   /* ===== Custom Scroll Bar ===== */
   /* width */

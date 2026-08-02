@@ -16,10 +16,8 @@ import Usage from "../Usage";
 const Projects: React.FC = () => {
   const { arg, history, rerender } = useContext(termContext);
 
-  /* ===== get current command ===== */
   const currentCommand = getCurrentCmdArry(history);
 
-  /* ===== check current command is redirect ===== */
   useEffect(() => {
     if (checkRedirect(rerender, currentCommand, "projects")) {
       projects.forEach(({ id, url }) => {
@@ -28,7 +26,6 @@ const Projects: React.FC = () => {
     }
   }, [arg, rerender, currentCommand]);
 
-  /* ===== check arg is valid ===== */
   const checkArg = () =>
     isArgInvalid(arg, "go", ["1", "2", "3", "4"]) ? (
       <Usage cmd="projects" />
@@ -39,8 +36,8 @@ const Projects: React.FC = () => {
   ) : (
     <div data-testid="projects">
       <ProjectsIntro>
-        “Talk is cheap. Show me the code”? I got you. <br />
-        Here are some of my projects you shouldn't misss
+        "Talk is cheap. Show me the code." <br />
+        Here are some of my featured projects:
       </ProjectsIntro>
       {projects.map(({ id, title, desc }) => (
         <ProjectContainer key={id}>
@@ -56,27 +53,27 @@ const Projects: React.FC = () => {
 const projects = [
   {
     id: 1,
-    title: "Sat Naing's Blog",
-    desc: "My personal blog where I can write down my thoughts and experiences.",
-    url: "https://satnaing.dev/blog/",
+    title: "Agentic AI Honeypot",
+    desc: "Autonomous honeypot system evaluating scam messages and engaging scammers in tactical conversations.",
+    url: "https://github.com/Soumadip-Eagle123/Agentic-AI-Honeypot-Complete",
   },
   {
     id: 2,
-    title: "Haru Fashion",
-    desc: "An ecommerce web application where users can browse various products and make purchases.",
-    url: "https://haru-fashion.vercel.app/",
+    title: "Agentic Supply Chain Guardian",
+    desc: "Warehouse logistics system with interactive Leaflet.js tracking and self-hosted Llama 3 AI transfer agents.",
+    url: "https://github.com/Soumadip-Eagle123/agentic-supply-chain-guardian",
   },
   {
     id: 3,
-    title: "Haru API",
-    desc: "A RESTful API developed for the Haru fashion ecommerce project.",
-    url: "https://satnaing.github.io/haru-api/",
+    title: "Distraction Free Learning",
+    desc: "Focused learning platform with YouTube distraction-blocking, built-in Pomodoro timer, and ambient white noise player.",
+    url: "https://github.com/Soumadip-Eagle123/distraction-free-learning",
   },
   {
     id: 4,
-    title: "AstroPaper Blog Theme",
-    desc: "A minimal, accessible and SEO-friendly Astro blog theme.",
-    url: "https://astro-paper.pages.dev/",
+    title: "Online Store",
+    desc: "E-commerce platform for music CDs featuring cart operations, product filtering, and search functionality.",
+    url: "https://github.com/Soumadip-Eagle123/Online-store",
   },
 ];
 

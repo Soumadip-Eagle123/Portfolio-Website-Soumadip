@@ -3,6 +3,7 @@ import { DefaultTheme, ThemeProvider } from "styled-components";
 import { useTheme } from "./hooks/useTheme";
 import GlobalStyle from "./components/styles/GlobalStyle";
 import Terminal from "./components/Terminal";
+import MatrixRain from "./components/MatrixRain";
 
 export const themeContext = createContext<
   ((switchTheme: DefaultTheme) => void) | null
@@ -57,6 +58,9 @@ function App() {
       {themeLoaded && (
         <ThemeProvider theme={selectedTheme}>
           <GlobalStyle />
+          {selectedTheme.name === "blue-matrix" && (
+            <MatrixRain color={selectedTheme.colors.primary} />
+          )}
           <themeContext.Provider value={themeSwitcher}>
             <Terminal />
           </themeContext.Provider>

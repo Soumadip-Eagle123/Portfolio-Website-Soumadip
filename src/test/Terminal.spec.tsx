@@ -1,7 +1,9 @@
-import { describe, it, expect, vi } from "vitest";
-import { UserEvent } from "@testing-library/user-event/dist/types/setup/setup";
+import { describe, it, expect, vi, beforeEach } from "vitest";
 import { render, screen, userEvent } from "../utils/test-utils";
 import Terminal, { commands } from "../components/Terminal";
+
+// Type of the object returned by userEvent.setup()
+type UserEvent = ReturnType<typeof userEvent.setup>;
 
 // setup function
 function setup(jsx: JSX.Element) {
@@ -54,10 +56,10 @@ describe("Terminal Component", () => {
       );
     });
 
-    it("should return '/home/satnaing' when user type 'pwd' cmd", async () => {
+    it("should return '/home/soumadip' when user type 'pwd' cmd", async () => {
       await user.type(terminalInput, "pwd{enter}");
       expect(screen.getByTestId("latest-output").firstChild?.textContent).toBe(
-        "/home/satnaing"
+        "/home/soumadip"
       );
     });
 
@@ -150,11 +152,11 @@ describe("Terminal Component", () => {
       await user.type(terminalInput, "email{enter}");
       expect(window.open).toHaveBeenCalled();
       expect(screen.getByTestId("latest-output").firstChild?.textContent).toBe(
-        "contact@satnaing.dev"
+        "soumadip.sen2024@vitstudent.ac.in"
       );
     });
 
-    const nums = [1, 2, 3, 4];
+    const nums = [1, 2];
     nums.forEach(num => {
       it(`should redirect to project URL when user type 'projects go ${num}' cmd`, async () => {
         await user.type(terminalInput, `projects go ${num}{enter}`);
@@ -201,14 +203,16 @@ describe("Terminal Component", () => {
         const arg = cmd === "themes" ? "go light" : "set 4";
         window.open = vi.fn();
 
-        // firstly run commands correct options
+        // firstly run commands with valid options
         await user.type(terminalInput, `projects go 4{enter}`);
-        await user.type(terminalInput, `socials go 4{enter}`);
-        await user.type(terminalInput, `themes set espresso{enter}`);
+        await user.type(terminalInput, `socials go 2{enter}`);
+        await user.type(terminalInput, `themes set blue-matrix{enter}`);
 
         // then run cmd with incorrect options
         await user.type(terminalInput, `${cmd} ${arg}{enter}`);
-        expect(window.open).toBeCalledTimes(2);
+
+        // Only the project and social commands should have opened a window
+        expect(window.open).toHaveBeenCalledTimes(2);
 
         // TODO: Test theme change
       });

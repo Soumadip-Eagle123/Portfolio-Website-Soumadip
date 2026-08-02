@@ -3,11 +3,14 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   padding: 1.25rem;
   padding-top: 0.75rem;
-
   display: flex;
   flex-direction: column-reverse;
   max-height: calc(100vh - 2rem);
   overflow-y: auto;
+  background: ${({ theme }) =>
+    theme.name === "blue-matrix" ? "rgba(2, 8, 20, 0.72)" : "transparent"};
+  backdrop-filter: ${({ theme }) =>
+    theme.name === "blue-matrix" ? "blur(2px)" : "none"};
 `;
 
 export const CmdNotFound = styled.div`
