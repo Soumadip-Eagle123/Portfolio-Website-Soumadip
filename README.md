@@ -1,96 +1,175 @@
-# Terminal Portfolio Website by Sat Naing
+# 💻 Terminal Portfolio Website – Soumadip Sen
 
-![Terminal Portfolio Website by Sat Naing](https://user-images.githubusercontent.com/53733092/194220661-e2ff8b4c-f64a-4b64-a836-c52fae6bbcda.png)
+![Terminal Portfolio Website](public/soumadip-terminal-og.png)
 
-![ts](https://badgen.net/badge/Built%20With/TypeScript/blue?style=flat-square)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/81fdb91d-c06f-46c2-b18d-dfc6f090f281/deploy-status)](https://app.netlify.com/sites/terminal-sn/deploys)
-![Gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square)
+![TypeScript](https://badgen.net/badge/Built%20With/TypeScript/3178C6?style=flat-square)
+![React](https://badgen.net/badge/Frontend/React/61DAFB?style=flat-square)
+![Vite](https://badgen.net/badge/Bundler/Vite/646CFF?style=flat-square)
+![Netlify](https://badgen.net/badge/Deployment/Netlify/00C7B7?style=flat-square)
 
-My perfolio website in terminal version developed with React, TypeScript and Styled-Components. Multiple themes supported and keyboard shortcuts can be used for some functionalities.
+A terminal-inspired developer portfolio built using **React**, **TypeScript**, **Vite**, and **Styled Components**. The website emulates a Linux terminal experience, allowing visitors to explore my profile, projects, education, skills, and social links using terminal commands.
 
-Blog Post: https://satnaing.dev/blog/posts/how-do-i-develop-my-terminal-portfolio-website-with-react
+🌐 **Live Demo:** https://soumadip-eagle123-terminal.netlify.app
 
-## Demo
+---
 
-<a href="https://www.jinno.app/redirect?from=satnaing&redirect=libary&libName=terminal-portfolio&componentName=App&libCreator=satnaing" target="_blank" rel="noopener noreferrer">Demo - try it in your editor</a>
+## ✨ Features
 
-## Features
+- 💻 Interactive terminal interface
+- 🎨 Multiple built-in themes
+- 🌌 Blue Matrix theme enabled by default
+- ⌨️ Keyboard shortcuts
+  - `Tab` / `Ctrl + I` → Autocomplete commands
+  - `↑` / `↓` → Navigate command history
+  - `Ctrl + L` → Clear terminal
+- 📖 Command history
+- 📱 Responsive design
+- ⚡ Progressive Web App (PWA)
+- ✅ Unit tested with Vitest & React Testing Library
 
-- Responsive Design 📱💻
-- Multiple themes 🎨
-- Autocomplete feature ✨ (TAB | Ctrl + i)
-- Go previous and next command ⬆️⬇️
-- View command history 📖
-- PWA and Offline Support 🔥
-- Well-tested ✅
+---
 
-## Tech Stack
+## 🚀 Available Commands
 
-**Frontend** - [React](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/)  
-**Styling** - [Styled-Components](https://styled-components.com/)  
-**UI/UX** - [Figma](https://figma.com/)  
-**State Management** - [ContextAPI](https://reactjs.org/docs/context.html)  
-**Testing** - [Vitest](https://vitest.dev/), [React Testing Library](https://testing-library.com/)  
-**Deployment** - [Netlify](https://app.netlify.com/)
+| Command | Description |
+|---------|-------------|
+| `about` | Learn more about me |
+| `education` | View my educational background |
+| `projects` | List my featured projects |
+| `projects go <n>` | Open a project |
+| `socials` | View my social profiles |
+| `socials go <n>` | Open a social profile |
+| `themes` | List available terminal themes |
+| `themes set <theme>` | Change the terminal theme |
+| `help` | Display all commands |
+| `history` | View command history |
+| `whoami` | Display current user |
+| `pwd` | Show current directory |
+| `email` | Open email client |
+| `gui` | Open the graphical portfolio page |
+| `clear` | Clear terminal |
+| `echo` | Print text |
 
-## Multiple Themes
+---
 
-<a href="https://www.jinno.app/redirect?from=satnaing&redirect=libary&libName=terminal-portfolio&componentName=App&libCreator=satnaing" target="_blank" rel="noopener noreferrer">Demo - Dark theme</a><br/>
-<a href="https://www.jinno.app/redirect?from=satnaing&redirect=libary&libName=terminal-portfolio&componentName=AppLight&libCreator=satnaing" target="_blank" rel="noopener noreferrer">Demo - light theme</a><br/>
-<a href="https://www.jinno.app/redirect?from=satnaing&redirect=libary&libName=terminal-portfolio&componentName=AppBlue&libCreator=satnaing" target="_blank" rel="noopener noreferrer">Demo - blue-matrix theme</a><br/>
-<a href="https://www.jinno.app/redirect?from=satnaing&redirect=libary&libName=terminal-portfolio&componentName=AppEspresso&libCreator=satnaing" target="_blank" rel="noopener noreferrer">Demo - espresso theme</a><br/>
-<a href="https://www.jinno.app/redirect?from=satnaing&redirect=libary&libName=terminal-portfolio&componentName=AppGreen&libCreator=satnaing" target="_blank" rel="noopener noreferrer">Demo - green-goblin theme</a><br/>
-<a href="https://www.jinno.app/redirect?from=satnaing&redirect=libary&libName=terminal-portfolio&componentName=AppUbuntu&libCreator=satnaing" target="_blank" rel="noopener noreferrer">Demo - ubuntu theme</a><br/>
+## 🛠 Tech Stack
 
-Currently, this website supports 6 themes. Type `themes` in the terminal for more info.
-![terminal-portfolio-themes](https://user-images.githubusercontent.com/53733092/194221801-94f1c28b-4865-4b7f-a73e-d41132519bea.png)
+### Frontend
 
-## Lighthouse Score
+- React
+- TypeScript
+- Vite
 
-<p align="center">
-<img width="710" alt="Sat Naing Terminal Lighthouse Score" src="public/lighthouse-result.svg">
-</p>
+### Styling
 
-## Running Locally
+- Styled Components
 
-Clone the project
+### Testing
+
+- Vitest
+- React Testing Library
+
+### Deployment
+
+- Netlify
+
+---
+
+## 📸 Preview
+
+![Portfolio Preview](public/soumadip-terminal-og.png)
+
+---
+
+## 🖥 Running Locally
+
+Clone the repository
 
 ```bash
-git clone https://github.com/satnaing/terminal-portfolio.git
+git clone https://github.com/Soumadip-Eagle123/Portfolio-Website-Soumadip.git
 ```
 
-Go to the project directory
+Move into the project
 
 ```bash
-cd terminal-portfolio
-```
-
-Remove remote origin
-
-```bash
-git remote remove origin
+cd Portfolio-Website-Soumadip
 ```
 
 Install dependencies
 
 ```bash
-npm install
+pnpm install
 ```
 
-Start the server
+Start the development server
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
-## Inspiration and Credits
+Build for production
 
-Here are some inspiration for this kind of terminal website. Only some features and functionalities are inspired by these following websites. All codes are written on my own.
+```bash
+pnpm build
+```
 
-- I built this repository using [Jinno](https://www.jinno.app/redirect?from=satnaing&redirect=vs)
-- [term m4tt72](https://term.m4tt72.com/)
-- [Forrest](https://fkcodes.com/)
+Preview production build
 
-## Author
+```bash
+pnpm preview
+```
 
-- [@satnaing](https://satnaing.dev)
+---
+
+## 📂 Project Structure
+
+```text
+src/
+├── components/
+├── commands/
+├── hooks/
+├── contexts/
+├── styles/
+├── test/
+├── utils/
+└── main.tsx
+```
+
+---
+
+## 🌟 About Me
+
+I'm **Soumadip Sen**, a Computer Science Engineering student at **VIT Chennai** specializing in **Cyber Physical Systems**.
+
+My interests include:
+
+- Artificial Intelligence
+- Agentic AI
+- Machine Learning
+- Full-Stack Development
+- Cybersecurity
+- Backend Engineering
+- Distributed Systems
+
+I enjoy building practical software that combines AI with scalable backend systems.
+
+---
+
+## 📫 Connect With Me
+
+- **Portfolio:** https://soumadip-eagle123-terminal.netlify.app
+- **GitHub:** https://github.com/Soumadip-Eagle123
+- **LinkedIn:** https://www.linkedin.com/in/soumadip-sen-b44a46300/
+- **Email:** soumadip.sen2024@vitstudent.ac.in
+
+---
+
+## 🙏 Acknowledgements
+
+This portfolio was originally inspired by the open-source terminal portfolio concept created by **Sat Naing**. It has since been extensively customized and rebranded with my own content, projects, styling, themes, and functionality.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
