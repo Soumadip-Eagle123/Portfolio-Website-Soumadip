@@ -1,53 +1,66 @@
-# 💻 Terminal Portfolio Website – Soumadip Sen
+# 💻 Terminal Portfolio Website
 
-![Terminal Portfolio Website](public/soumadip-terminal-og.png)
+<div align="center">
 
-![TypeScript](https://badgen.net/badge/Built%20With/TypeScript/3178C6?style=flat-square)
-![React](https://badgen.net/badge/Frontend/React/61DAFB?style=flat-square)
-![Vite](https://badgen.net/badge/Bundler/Vite/646CFF?style=flat-square)
-![Netlify](https://badgen.net/badge/Deployment/Netlify/00C7B7?style=flat-square)
+![Portfolio Preview](public/soumadip-terminal-og.png)
 
-A terminal-inspired developer portfolio built using **React**, **TypeScript**, **Vite**, and **Styled Components**. The website emulates a Linux terminal experience, allowing visitors to explore my profile, projects, education, skills, and social links using terminal commands.
+**An interactive Linux terminal-inspired portfolio built with React, TypeScript, and Vite.**
+
+[![React](https://img.shields.io/badge/React-18.2-61DAFB?logo=react&logoColor=white)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-4.x-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Styled Components](https://img.shields.io/badge/Styled--Components-DB7093?logo=styledcomponents&logoColor=white)](https://styled-components.com/)
+[![Netlify](https://img.shields.io/badge/Deployment-Netlify-00C7B7?logo=netlify&logoColor=white)](https://www.netlify.com/)
 
 🌐 **Live Demo:** https://soumadip-eagle123-terminal.netlify.app
+
+</div>
+
+---
+
+## 🚀 About
+
+This project is my personal portfolio presented through a fully interactive terminal interface.
+
+Visitors can navigate the portfolio using Linux-style commands to explore my background, education, projects, social profiles, and more.
+
+The website is built with modern frontend technologies while maintaining the feel of a real command-line environment.
 
 ---
 
 ## ✨ Features
 
 - 💻 Interactive terminal interface
-- 🎨 Multiple built-in themes
-- 🌌 Blue Matrix theme enabled by default
-- ⌨️ Keyboard shortcuts
-  - `Tab` / `Ctrl + I` → Autocomplete commands
-  - `↑` / `↓` → Navigate command history
-  - `Ctrl + L` → Clear terminal
-- 📖 Command history
+- 🎨 Multiple terminal themes
+- 🌌 **Blue Matrix** theme enabled by default
+- ⚡ Command autocomplete (`Tab` / `Ctrl + I`)
+- 📜 Command history navigation (`↑` / `↓`)
+- 🧹 Clear terminal (`Ctrl + L`)
 - 📱 Responsive design
-- ⚡ Progressive Web App (PWA)
-- ✅ Unit tested with Vitest & React Testing Library
+- 📦 Progressive Web App (PWA)
+- 🧪 Unit tested using Vitest & React Testing Library
 
 ---
 
-## 🚀 Available Commands
+## 🖥 Available Commands
 
 | Command | Description |
 |---------|-------------|
-| `about` | Learn more about me |
-| `education` | View my educational background |
-| `projects` | List my featured projects |
-| `projects go <n>` | Open a project |
-| `socials` | View my social profiles |
-| `socials go <n>` | Open a social profile |
-| `themes` | List available terminal themes |
-| `themes set <theme>` | Change the terminal theme |
-| `help` | Display all commands |
-| `history` | View command history |
-| `whoami` | Display current user |
-| `pwd` | Show current directory |
+| `about` | About me |
+| `education` | Educational background |
+| `projects` | Featured projects |
+| `projects go <number>` | Open a project |
+| `socials` | Social profiles |
+| `socials go <number>` | Open a social profile |
+| `themes` | Available themes |
+| `themes set <theme>` | Change theme |
 | `email` | Open email client |
-| `gui` | Open the graphical portfolio page |
+| `gui` | Open portfolio in browser |
+| `whoami` | Display current user |
+| `pwd` | Display current directory |
+| `history` | Show command history |
 | `clear` | Clear terminal |
+| `help` | Display all commands |
 | `echo` | Print text |
 
 ---
@@ -63,6 +76,7 @@ A terminal-inspired developer portfolio built using **React**, **TypeScript**, *
 ### Styling
 
 - Styled Components
+- Styled Normalize
 
 ### Testing
 
@@ -75,9 +89,18 @@ A terminal-inspired developer portfolio built using **React**, **TypeScript**, *
 
 ---
 
-## 📸 Preview
+## 📂 Project Structure
 
-![Portfolio Preview](public/soumadip-terminal-og.png)
+```text
+src/
+├── components/
+├── contexts/
+├── hooks/
+├── styles/
+├── test/
+├── utils/
+└── main.tsx
+```
 
 ---
 
@@ -89,7 +112,7 @@ Clone the repository
 git clone https://github.com/Soumadip-Eagle123/Portfolio-Website-Soumadip.git
 ```
 
-Move into the project
+Navigate into the project
 
 ```bash
 cd Portfolio-Website-Soumadip
@@ -101,7 +124,7 @@ Install dependencies
 pnpm install
 ```
 
-Start the development server
+Run the development server
 
 ```bash
 pnpm dev
@@ -113,7 +136,7 @@ Build for production
 pnpm build
 ```
 
-Preview production build
+Preview the production build
 
 ```bash
 pnpm preview
@@ -121,55 +144,37 @@ pnpm preview
 
 ---
 
-## 📂 Project Structure
-
-```text
-src/
-├── components/
-├── commands/
-├── hooks/
-├── contexts/
-├── styles/
-├── test/
-├── utils/
-└── main.tsx
-```
-
----
-
-## 🌟 About Me
+## 👨‍💻 About Me
 
 I'm **Soumadip Sen**, a Computer Science Engineering student at **VIT Chennai** specializing in **Cyber Physical Systems**.
 
-My interests include:
+My primary interests include:
 
 - Artificial Intelligence
 - Agentic AI
 - Machine Learning
 - Full-Stack Development
-- Cybersecurity
 - Backend Engineering
+- Cybersecurity
 - Distributed Systems
-
-I enjoy building practical software that combines AI with scalable backend systems.
 
 ---
 
 ## 📫 Connect With Me
 
-- **Portfolio:** https://soumadip-eagle123-terminal.netlify.app
-- **GitHub:** https://github.com/Soumadip-Eagle123
-- **LinkedIn:** https://www.linkedin.com/in/soumadip-sen-b44a46300/
-- **Email:** soumadip.sen2024@vitstudent.ac.in
+- 🌐 Portfolio: https://soumadip-eagle123-terminal.netlify.app
+- 💼 LinkedIn: https://www.linkedin.com/in/soumadip-sen-b44a46300/
+- 💻 GitHub: https://github.com/Soumadip-Eagle123
+- 📧 Email: soumadip.sen2024@vitstudent.ac.in
 
 ---
 
 ## 🙏 Acknowledgements
 
-This portfolio was originally inspired by the open-source terminal portfolio concept created by **Sat Naing**. It has since been extensively customized and rebranded with my own content, projects, styling, themes, and functionality.
+This project was originally inspired by the open-source terminal portfolio created by **Sat Naing**. It has been extensively customized and rebranded with my own content, projects, styling, and functionality to serve as my personal portfolio.
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is available under the MIT License.
